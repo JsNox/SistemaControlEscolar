@@ -1,0 +1,158 @@
+<html>
+<head>
+<title>Formulario generador de codigo</title>
+</head>
+
+<body>
+<form method="POST" action="Serie.php">
+<table width="817" border="3" bgcolor="#00CCFF">
+<tr><td colspan="2" bgcolor="#33CCFF" align="center"><h1>GENERADOR DE CODIGO</h1></td></tr>
+<tr>
+<td width="178"><p>FONDO:</p></td>
+<td><select name="fondo">
+    <option selected>Selecciona</option>
+    <option value="SGOB">SGOB</option>
+    </select>
+</td>
+</tr>
+<tr>
+<td>Subfondo:</td>
+<td><select name="subfondo">
+    <option selected>Seleccionar</option>
+    <option value="01">Subsecretaria de Gobernación</option>
+    <option value="02">Subsecretaria de Gobierno en la Huasteca Hidalguense</option>
+    <option value="03">Subsecretria de Gobierno en el Valle de Mezquital</option>
+    <option value="04">Subsecretria de Desarrollo Politico y Asuntos Religiosos</option>
+    <option value="05">Coordinación General Del C.I.S.E.</option>
+    <option value="06">Coordinación General Jurídica</option>
+    <option value="07">Subsecretria de Protección Civil y Gestión de Riesgos</option>
+    <option value="08">Junta de asesores</option>
+    <option value="09">Coordinacion General de Comunicacion Social</option>
+    <option value="10">Subsecretria de Transporte</option>
+    </select>
+</td>
+</tr>
+<tr>
+<td>area:</td>
+<td><select name="area">
+    <option selected>Seleccionar</option>
+    <option value="01">Subsecretaria de Gobernacion</option>
+    <option value="01.1">Direccion General de Gobernacion Pachuca</option>
+    <option value="01.1.1">Direccion de Vinculacion</option>
+    <option value="01.1.2">Direccion de Analisis y prospectiva Politica</option>
+    <option value="01.1.3">Direccion de Concertacion Politica Y Social</option>
+    <option value="01.1.4">Direccion de Informacion Politica y Social</option>
+    <option value="01.1.1.1">Subdireccion de Concertacion</option>
+    <option value="01.1.3.1">Subdireccion de Atencion a Organizaciones</option>
+    <option value="01.1.1.1.1">Departamento de Seguimiento</option>
+    <option value="01.1.2.1">Departamento Tecnico</option>
+    <option value="01.1.2.2">Departamento de Servicios Generales</option>
+    <option value="01.1.4.1">Departamento de Investigaciones Politicas</option>
+    <option value="01.1.4.2">Departamento de Investigaciones Sociales</option>
+    <option value="01.1.4.3">Delegaciones Regionales</option>
+    <option value="01.2">Direccion General de Gobernacion Tula de Allende</option>
+    <option value="01.2.1">Direccion de Concertacion</option>
+    <option value="01.2.1.1">Subdireccion de Vinculacion con Organizaciones</option>
+    <option value="01.2.1.1.1">Delegacion Regional</option>
+    <option value="01.3">Direccion General de Investigaciones Politicas y Sociales</option>
+    <option value="01.3.1">Direccion Regional Pachuca</option>
+    <option value="01.3.2">Direccion Regional Tulancingo</option>
+    <option value="01.3.3">Direccion Regional Zacualtipan</option>
+    <option value="01.3.4">Direccion Regional Molango</option>
+    <option value="01.3.5">Direccion Regional Tepeapulco</option>
+    <option value="01.3.6">Direccion Regional Tizayuca</option>
+    <option value="01.3.7">Direccion Regional Meztitlan</option>
+    <option value="01.3.8">Direccion Regional Huichapan</option>
+    <option value="01.3.9">Direccion Regional Zimapan</option>
+    <option value="01.3.4.1">Delegacion Regional</option>
+    <option value="01.3.6.1">Delegacion Regional</option>
+    <option value="01.3.9.1">Delegacion Regional</option>
+    <option value="01.4">Direccion General de Asuntos Agrarios</option>
+    <option value="01.4.1">Direccion de Concertacion</option>
+    <option value="01.4.1.1">Subdireccion de Concertacion Municipal</option>
+    <option value="01.4.1.2">Subdireccion de informacion Agraria</option>
+    <option value="01.5">Direccion de Gobernacion de Tulancingo de Bravo</option>
+    <option value="01.5.1">Direccion de Concertacion</option>
+    <option value="01.5.1.1">Subdireccion de Vinculacion con Organizaciones</option>
+    <option value="01.5.1.1.1">Delegacion Regional</option>
+    <option value="01.6">Direccion de Control Documental</option>
+    <option value="01.6.1">Subdireccion de legalizacion de documentos</option>
+    <option value="01.6.2">Subdireccion de Control Documental</option>
+    <option value="01.6.1.1">Departamento de Evaluacion</option>
+    <option value="01.6.1.2">Departamento de Seguimiento</option>
+    <option value="01.7">Enlace Administrativo</option>
+    </select>
+</td>
+</tr>
+<tr>
+<td><p>Secciones:</p></td>
+<td><input type="radio" name="secion" value="comunes" />
+   comunes
+    <input type="radio" name="secion" value="Sustantivas" />
+    Sustantivas</td></tr>
+<td>Seccion:</td>
+<td><select name="secciones">
+    <option selected>Seleciona</option>
+    <option value="1C">LEGISLACION</option>
+    <option value="1C.1">Dispociciones legales en la materia</option>
+    <option value="1C.2">Programas y proyectos sobre la legislacion</option>
+    <option value="1C.3">Leyes</option>
+    <option value="1C.4">Codigos</option>
+    <option value="1C.5">Convenios y Tratados Internacionales</option>
+    <option value="1C.6">Decretos</option>
+    <option value="1C.7">Reglamentos</option>
+    <option value="1C.8">Acuerdos Generales</option>
+    <option value="1C.9">Circulares</option>
+    <option value="1C.10">Instrumentos Juridicos Concensuales (Convenios, bases de colaboracion, acuerdos, etc.)</option>
+    <option value="1C.11">Resoluciones</option>
+    <option value="1C.12">Periodico Oficial del Estado(Publicaciones en el)</option>
+    <option value="1C.13">Normas Oficiales Mexicanas</option>
+    <option value="1C.14">Representaciones De la Secretaria ante los Organos de Gobierno</option>
+    <option value="1C.16.1">Informacion derivada de las representaciones de la secretaria ante los organos de Gobierno</option>
+    <option value="1C.16.2">Actas y acuerdos de las representaciones de la secretaria ante los organos de Gobierno</option>
+    </select>
+    </td>
+    </tr>
+<tr>
+<td width="178"><p>No de carpeta:</p></td>
+<td width="619"><input type="text" name="carpeta" size="10" required></td></tr>
+<td width="178"><p>Año:</p></td>
+<td><select name="fecha">
+    <option selected>Seleciona</option>
+    <option value="2010">2010</option>
+    <option value="2011">2011</option>
+    <option value="2012">2012</option>
+    <option value="2013">2013</option>
+    <option value="2014">2014</option>
+    <option value="2015">2015</option>
+    <option value="2016">2016</option>
+    <option value="2017">2017</option>
+    <option value="2018">2018</option>
+    <option value="2019">2019</option>
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+    <option value="2025">2025</option>
+    <option value="2026">2026</option>
+    <option value="2027">2027</option>
+    <option value="2028">2028</option>
+    <option value="2029">2029</option>
+    <option value="2030">2030</option>
+    </select>
+    </td>
+    </tr>
+<td colspan="2" align="center"><p><input type="submit" value="Enviar" name="B1"></p></td>
+</tr>    
+<tr>
+<td colspan="2" align="center"><script language="javascript">
+function cierra(){
+window.close();
+}
+</script>
+<input type="button" onClick="cierra()" value="Salir de la pagina"></td></tr>
+</table>
+</form>
+</body>
+</html>

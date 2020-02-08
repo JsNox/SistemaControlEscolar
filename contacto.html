@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login alumno</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <center>
+        <img src="cuh.jpg" width="100%">
+        <header>
+            <nav>
+                <ul class="row">
+                    <li class="col s3"><a href="index.html"><span class="primero"><i class="material-icons">apps</i></span>Inicio</a></li>
+                    <li class="col s3"><a href="#"><span class="segundo"><i class="material-icons">person</i></span>Iniciar sesion</a>
+                        <ul>
+                            <li><a href="login_admin.html">Administrador</a></li>
+                            <li><a href="login_alumno.html">Alumno</a></li>
+                            <li><a href="login_docente.html">Docente</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="col s3"><a href="somos.html"><span class="cuarto"><i class="material-icons">group</i></span>¿Quienes somos?</a></li>
+                    <li class="col s3"><a href="contacto.html"><span class="quinto"><i class="material-icons">sms</i></span>Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <center>
+            <h1>Contacto</h1>
+        </center>
+        <div class="contenedor-formulario">
+            <div class="wrap">
+                <form action="validar_contacto.php" method="POST" name="formulario_registro" class="formulario">
+                    <div class="input-field">
+                        <label class="label" for="Nombre">Nombre</label>
+                        <input type="text" id="Nombre" name="Nombre">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="email">Tu email</label>
+                        <input type="text" id="email" name="email">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="estado">Estado</label>
+                        <input type="text" id="estado" name="estado">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="ciudad">Ciudad</label>
+                        <input type="text" id="ciudad" name="ciudad">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto">
+                    </div>
+                    <div class="input-field">
+                        <label class="label" for="mensaje">Tu mensaje:</label>
+                        <textarea rows="50" cols="100" id="mensaje" name="mensaje" placeholder="Escriba aquí su comentario"></textarea>
+                    </div>
+                    <input type="submit" id="btn-submit" value="Enviar">
+            </div>
+
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery.slides.js"></script>
+
+        </form>
+    </center>
+    <footer>
+        <img src="footer.png" width="100%">
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Login docente</title>
+	<link rel="stylesheet"  href="estilos.css">
+<link rel="stylesheet"  href="fonts.css">
+<link rel="stylesheet"  href="css/estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<center>
+	<img src="cuh.jpg" width="100%">
+<header>		
+		<nav>
+			<ul class="row">
+				<li class="col s3"><a href="inicio.html"><span class="primero"><i class="material-icons">apps</i></span>Inicio</a></li>
+				<li class="col s3"><a href="#"><span class="segundo"><i class="material-icons">person</i></span>Iniciar sesion</a>
+					<ul>
+							<li><a href="login_admin.html">Administrador</a></li>
+							<li><a href="login_alumno.html">Alumno</a></li>
+							<li><a href="login_docente.html">Docente</a></li>
+						
+					</ul>
+				</li>
+				<li class="col s3"><a href="somos.html"><span class="cuarto"><i class="material-icons">group</i></span>¿Quienes somos?</a></li>
+				<li class="col s3"><a href="contacto.html"><span class="quinto"><i class="material-icons">sms</i></span>Contacto</a></li>
+			</ul>
+		</nav></header>
+<div class="container">
+	<center><h3>Login del docente</h3></center>
+	<div class="contenedor-formulario">
+		<div class="wrap">
+		<form action="validar.php" method="POST" name ="formulario_registro" class="formulario">
+			<div class="input-field">
+				<i class="material-icons prefix">account_circle</i>
+				<label for="Id_docente">Id docente</label>
+					<input id="Id_docente" name="Id_docente" type="text" class="validate">	
+				</div>
+				<div class="input-field">
+				<i class="material-icons prefix">vpn_key</i>
+					<label for="pass">Contraseña</label>
+					<input type="password" id="pass" name="pass">
+				</div>
+			
+<button class="btn waves-effect waves-light" type="submit" name="action">Guardar
+    	<i class="material-icons right">save</i>		</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	</form>
+	</div>
+	</center>
+	<footer>
+		<img src="footer.png" width="100%">
+	</footer>
+</body>
+</html>

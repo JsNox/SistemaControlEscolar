@@ -1,0 +1,74 @@
+
+<html>
+<head>
+<title>Alta materias</title>
+<meta charset="utf-8"/>
+<link rel="shortcut Icon"  href="logocuh.ico">
+<link rel="stylesheet"  href="estilos.css">
+<link rel="stylesheet"  href="fonts.css">
+<link rel="stylesheet"  href="css/estilos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+		<img src="cuh.jpg">
+<header>		
+		<nav>
+			<ul class="row">
+				<li class="col s3"><a href="inicio.html"><span class="primero"><i class="material-icons">apps</i></span>Inicio</a></li>
+				<li class="col s3"><a href="#"><span class="segundo"><i class="material-icons">person</i></span>Iniciar sesion</a>
+					<ul>
+							<li><a href="login_admin.html">Administrador</a></li>
+							<li><a href="login_alumno.html">Alumno</a></li>
+							<li><a href="login_docente.html">Docente</a></li>
+						
+					</ul>
+				</li>
+				<li class="col s3"><a href="somos.html"><span class="cuarto"><i class="material-icons">group</i></span>¿Quienes somos?</a></li>
+				<li class="col s3"><a href="contacto.html"><span class="quinto"><i class="material-icons">sms</i></span>Contacto</a></li>
+			</ul>
+		</nav></header>		
+			<center><h1>Alta de materias</h1></center>
+	<div class="contenedor-formulario">
+		<div class="wrap">
+	<form action="alta_materias.php" method="POST" class="formulario" name="formulario_registro">
+			<div class="input-field">
+				<label class="label" for="nombre">Nombre</label>
+				<input type="text" name="nombre" id="nombre">
+				
+			</div>
+				<br>
+				<div class="input-field">
+					<select name="carrera">
+						 <option value="" disabled selected>Carrera</option>
+					<option value="1">Sistemas</option>
+					<option value="2">Derecho</option>
+					<option value="3">Contaduría</option>
+					<option value="4">Psicología</option>
+					<option value="5">Educación</option>
+					<option value="6">Administración y sistemas</option>
+					
+					</select>
+				</div>
+				<input type="submit" id="btn-submit" value="Enviar">
+				 <div class="input-field col s12">
+				 	<a href="menu.php"><img src="atras.png" width="5%"></a>
+     
+  </div>
+
+		</div>
+
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	</form>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('select');
+    var instances = M.FormSelect.init(elems);
+   });
+</script> 
+</body>
+</html>

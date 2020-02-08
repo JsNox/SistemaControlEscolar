@@ -1,0 +1,65 @@
+<html>
+   <head>
+      <title>The Materialize Selects Example</title>
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1">      
+      <link rel = "stylesheet"
+         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel = "stylesheet"
+         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+      <script type = "text/javascript"
+         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+      </script> 
+      
+      <script>
+         $(document).ready(function() {
+            $('select').material_select();
+         });
+      </script>
+      <link rel="shortcut Icon"  href="logocuh.ico">
+<link rel="stylesheet"  href="estilos.css">
+<link rel="stylesheet"  href="fonts.css">
+<link rel="stylesheet"  href="css/estilos.css">
+      <meta charset="utf-8"/>
+   </head>
+   
+   <body class = "container"> 
+   <center><img src="cuh.jpg"></center>
+   <header>
+      
+      <nav>
+         <ul class="row">
+            <li class="col s3"><a href="#"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+            <li class="col s3"><a href="#"><span class="segundo"><i class="icon icon-price-tag"></i></span>Iniciar sesion</a>
+               <ul>
+                     <li><a href="login_admin.html">Administrador</a></li>
+                     <li><a href="login_alumno.html">Alumno</a></li>
+                     <li><a href="login_docente.html">Docente</a></li>
+                  
+               </ul>
+            </li>
+            <li class="col s3"><a href="#"><span class="cuarto"><i class="icon icon-file-text2"></i></span>Acerca de</a></li>
+            <li class="col s3"><a href="#"><span class="quinto"><i class="icon icon-envelop"></i></span>Contacto</a></li>
+         </ul>
+      </nav>
+   </header>  
+      <div class = "row">
+         <form class = "col s12">
+            <div class = "row">
+            <label>Carrera</label>
+               <select>
+                  <option value = "" disabled selected>Selecciona carrera</option>
+               <option value="1">Sistemas</option>
+               <option value="2">Derecho</option>
+               <option value="3">Contaduría</option>
+               <option value="4">Psicología</option>
+               <option value="5">Educación</option>
+               <option value="6">Administración y sistemas</option>
+               </select>               
+            </div>
+            
+            			
+         </form>       
+      </div>
+   </body>   
+</html>

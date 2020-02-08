@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet"  href="estilos.css">
+<link rel="stylesheet"  href="fonts.css">
+<style >
+	
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    align-self: center;
+}
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+table#t01 tr:nth-child(even) {
+    background-color: #eee;
+}
+table#t01 tr:nth-child(odd) {
+   background-color: #fff;
+}
+table#t01 th {
+    background-color: black;
+    color: white;
+}
+		body{
+		background: url("fondo1.jpg")no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		
+</style>
+</head>
+<body>
+	<center>
+	<img src="cuh.jpg">
+	<header>
+		
+		<nav>
+			<ul>
+				<li><a href="#"><span class="primero"><i class="icon icon-home"></i></span>Inicio</a></li>
+				<li><a href="#"><span class="segundo"><i class="icon icon-price-tag"></i></span>Iniciar sesion</a>
+					<ul>
+							<li><a href="#">Administrador</a></li>
+							<li><a href="#">Alumno</a></li>
+							<li><a href="login_docente.html">Docente</a></li>
+						
+					</ul>
+				</li>
+				<li><a href="#"><span class="tercero"><i class="icon icon-briefcase"></i></span>Servicios</a></li>
+				<li><a href="#"><span class="cuarto"><i class="icon icon-file-text2"></i></span>Acerca de</a></li>
+				<li><a href="#"><span class="quinto"><i class="icon icon-envelop"></i></span>Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+	<form action="validar.php" method="POST">
+		<table border="1" align="center" id="t01">
+			<tr>
+				<th colspan="2" align="center"><h2>LOGIN DOCENTE</h2></th>
+			</tr>
+			<tr>
+				<td>Id. Docente</td><td><input type="text" name="id_docente"></td>
+			</tr>
+			<tr>
+				<td>Password</td><td><input type="password" name="pass"></td>
+			</tr>
+			<tr><td colspan="2" align="center"><input type="submit" value="Enviar"></td></tr>
+		</table>
+	</form>
+	</center>
+</body>
+</html>
