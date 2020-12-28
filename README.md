@@ -1,4 +1,3 @@
-# SistemaControlEscolar
 #Sistema de control escolar con Html, PHP y MySQL
 ## Descripción
 En este proyecto se abarcan las funcionalidades de Crud pensado para llevar a cabo las operaciones realizadas por el departamento de control escolar del CUH.
